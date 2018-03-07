@@ -1,4 +1,4 @@
-<h1> Unit Testing for python scripts
+<h1> Unit Testing for python scripts <h1>
 
 __Requirements: Write a set of unit tests to evaluate whether the output is correct using pytest__
 
@@ -32,13 +32,24 @@ If there are multiple unit test files present within the project then each must 
 
 To demonstrate how to write the tests; I will use the reversecomplement.py script as an example.
 
-Navigate to the folder where the reversecomplement.py is stored e.g.
+Navigate to the folder where the reversecomplement.py is stored e.g. ~/Documents/MyFiles/Python/rosalind
 
 In the test file, write the following code:
 
 ```import reversecomplement
 
-def 
+   def test_reversecomplement():
+    input_dna_string = "ACTGACTG"
+    output_dna_string = "CAGTCAGT"
+    assert reversecomplement_revision.reversecomplement(input_dna_string) == output_dna_string
+
+   def test_reversecomplement_verbose():
+    input_dna_string = "ACTGACTG"
+    output_text_string = "Here is the reverse complement sequence: 'CAGTCAGT'"
+    verbose = True
+    assert reversecomplement_revision.reversecomplement(input_dna_string, verbose) == output_text_string```
+
+
 
 
 
