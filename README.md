@@ -47,7 +47,8 @@ In the test file, write the following code:
     input_dna_string = "ACTGACTG"
     output_text_string = "Here is the reverse complement sequence: 'CAGTCAGT'"
     verbose = True
-    assert reversecomplement_revision.reversecomplement(input_dna_string, verbose) == output_text_string```
+    assert reversecomplement_revision.reversecomplement(input_dna_string, verbose) == output_text_string
+ ```
 
 
 
